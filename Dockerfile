@@ -5,7 +5,7 @@ COPY . /usr/share/nginx/html
 
 # Configure Nginx for single page applications
 RUN echo 'server {\n\
-    listen 8080;\n\
+    listen 0.0.0.0:8080;\n\
     server_name localhost;\n\
     root /usr/share/nginx/html;\n\
     index index.html;\n\
