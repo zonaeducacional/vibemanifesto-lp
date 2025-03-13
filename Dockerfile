@@ -3,20 +3,32 @@ FROM nginx:alpine
 # Copy static files to Nginx's default public directory
 COPY . /usr/share/nginx/html
 
-# Configure Nginx for single page applications
+# Remove default Nginx configuration
+RUN rm /etc/nginx/conf.d/default.conf
+
+# Create a more robust configuration for Fly.io
 RUN echo 'server {\n\
-    listen 0.0.0.0:8080;\n\
-    server_name localhost;\n\
+    listen 8080 default_server;\n\
+    listen [::]:8080 default_server;\n\
+    \n\
     root /usr/share/nginx/html;\n\
     index index.html;\n\
-    # Handle 404s by redirecting to index.html\n\
+    \n\
+    server_name _;\n\
+    \n\
+    # Handle all locations\n\
     location / {\n\
-        try_files $uri $uri/ /index.html;\n\
+        try_files $uri $uri/ /index.html =404;\n\
     }\n\
+    \n\
+    # Add custom headers\n\
+    add_header X-Frame-Options "SAMEORIGIN" always;\n\
+    add_header X-XSS-Protection "1; mode=block" always;\n\
+    add_header X-Content-Type-Options "nosniff" always;\n\
 }' > /etc/nginx/conf.d/default.conf
 
 # Expose port 8080
 EXPOSE 8080
 
-# Start Nginx
+# Start Nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
