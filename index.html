@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vibe Coding Manifesto - A philosophy for a new generation of developers">
-    <meta property="og:title" content="Vibe Coding Manifesto">
-    <meta property="og:description" content="A philosophy for a new generation of developers">
+    <meta name="description" content="Manifesto Vibe Coding - Uma filosofia para uma nova geração de desenvolvedores">
+    <meta property="og:title" content="Manifesto Vibe Coding">
+    <meta property="og:description" content="Uma filosofia para uma nova geração de desenvolvedores">
     <meta property="og:url" content="https://vibemanifesto.org/">
     <meta property="og:type" content="website">
-    <title>Vibe Coding Manifesto</title>
+    <title>Manifesto Vibe Coding</title>
     
-    <!-- Favicon -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -48,10 +45,8 @@
         }
     </script>
     
-    <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
-    <!-- Custom styles -->
     <style>
         [x-cloak] { display: none !important; }
         
@@ -92,11 +87,11 @@
         <header class="py-10 md:py-16 px-6 text-center bg-gradient-to-b from-purple-50 to-white dark:from-purple-900/20 dark:to-gray-900">
             <div class="container mx-auto max-w-4xl">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-4">
-                    Manifesto for Vibe Coding
+                    Manifesto para Vibe Coding
                 </h1>
                 <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">
-                    We are uncovering a new way of building software by embracing AI, iteration, and human intuition. 
-                    Through this work, we have come to value:
+                    Estamos descobrindo uma nova forma de construir software abraçando a IA, a iteração e a intuição humana. 
+                    Através deste trabalho, passamos a valorizar:
                 </p>
                 
                 <button x-cloak @click="darkMode = !darkMode" 
@@ -113,104 +108,102 @@
         
         <main id="manifesto" class="flex-grow pt-0 pb-8 px-6">
             <div class="container mx-auto max-w-3xl prose dark:prose-invert prose-lg">
-                <!-- Version: 2025-03-13 -->
-                
                 <div class="mt-0 mb-8">
                     <div class="manifesto-item">
                         <span class="text-primary-500 text-xl">💜</span>
-                        <span><strong>Flow over friction</strong> – Ride the wave, don't fight it.</span>
+                        <span><strong>Fluxo sobre atrito</strong> – Surfe a onda, não lute contra ela.</span>
                     </div>
                     <div class="manifesto-item">
                         <span class="text-primary-500 text-xl">💜</span>
-                        <span><strong>Iteration over perfection</strong> – Perfection is obsolete if you can always reroll.</span>
+                        <span><strong>Iteração sobre perfeição</strong> – A perfeição é obsoleta se você pode sempre tentar de novo.</span>
                     </div>
                     <div class="manifesto-item">
                         <span class="text-primary-500 text-xl">💜</span>
-                        <span><strong>Augmentation over automation</strong> – AI is a collaborator, not a replacement.</span>
+                        <span><strong>Aumento sobre automação</strong> – A IA é uma colaboradora, não uma substituta.</span>
                     </div>
                     <div class="manifesto-item">
                         <span class="text-primary-500 text-xl">💜</span>
-                        <span><strong>Product thinking over code crafting</strong> – What matters is what you build, not how you write it.</span>
+                        <span><strong>Pensamento de produto sobre criação de código</strong> – O que importa é o que você constrói, não como você o escreve.</span>
                     </div>
                     <div class="manifesto-item">
                         <span class="text-primary-500 text-xl">💜</span>
-                        <span><strong>Rerolling over debugging</strong> – If fixing takes too long, regenerate.</span>
+                        <span><strong>Regenerar sobre depurar</strong> – Se a correção demorar muito, regenere.</span>
                     </div>
                     <div class="manifesto-item">
                         <span class="text-primary-500 text-xl">💜</span>
-                        <span><strong>Human taste over technical constraints</strong> – The best tech serves great taste, not the other way around.</span>
+                        <span><strong>Gosto humano sobre restrições técnicas</strong> – A melhor tecnologia serve ao bom gosto, e não o contrário.</span>
                     </div>
                 </div>
                 
-                <p>That is, while there is value in the items on the right, we value the items on the left more.</p>
+                <p>Ou seja, embora haja valor nos itens à direita, valorizamos mais os itens à esquerda.</p>
                 
-                <h2 class="text-2xl md:text-3xl">Principles of Vibe Coding</h2>
+                <h2 class="text-2xl md:text-3xl">Princípios do Vibe Coding</h2>
                 
                 <ol class="list-decimal pl-8 space-y-4">
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Focus on the problem, not the code.</strong> 
-                        Code is just the medium—what matters is solving the right problems.
+                        <strong class="text-primary-600 dark:text-primary-400">Foque no problema, não no código.</strong> 
+                        O código é apenas o meio — o que importa é resolver os problemas certos.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Taste is the ultimate filter.</strong> 
-                        AI can generate infinite solutions, but only human judgment can pick the right one.
+                        <strong class="text-primary-600 dark:text-primary-400">O gosto é o filtro final.</strong> 
+                        A IA pode gerar infinitas soluções, mas apenas o julgamento humano pode escolher a certa.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Systems thinking beats syntax mastery.</strong> 
-                        The best engineers don't just code—they architect, evaluate, and iterate.
+                        <strong class="text-primary-600 dark:text-primary-400">O pensamento sistêmico supera o domínio da sintaxe.</strong> 
+                        Os melhores engenheiros não apenas codificam — eles arquitetam, avaliam e iteram.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">AI is your co-creator.</strong> 
-                        The best engineers wield AI to amplify their impact, not just automate tasks.
+                        <strong class="text-primary-600 dark:text-primary-400">A IA é sua cocriadora.</strong> 
+                        Os melhores engenheiros utilizam a IA para ampliar seu impacto, não apenas para automatizar tarefas.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Speed is the new craftsmanship.</strong> 
-                        The highest priority is delivering valuable software continuously and exponentially faster.
+                        <strong class="text-primary-600 dark:text-primary-400">Velocidade é a nova arte.</strong> 
+                        A maior prioridade é entregar software valioso de forma contínua e exponencialmente mais rápida.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Deliver in minutes, not days.</strong> 
-                        AI enables a pace where shipping happens as fast as thinking.
+                        <strong class="text-primary-600 dark:text-primary-400">Entregue em minutos, não em dias.</strong> 
+                        A IA permite um ritmo onde a entrega acontece tão rápido quanto o pensamento.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Change is fuel.</strong> 
-                        Welcome new requirements at any stage—flexibility is a superpower, not a burden.
+                        <strong class="text-primary-600 dark:text-primary-400">A mudança é combustível.</strong> 
+                        Aceite novos requisitos em qualquer estágio — flexibilidade é um superpoder, não um fardo.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Simplicity scales.</strong> 
-                        The best way to build fast and flexibly is to maximize what you don't build.
+                        <strong class="text-primary-600 dark:text-primary-400">A simplicidade escala.</strong> 
+                        A melhor maneira de construir rápido e de forma flexível é maximizar o que você não constrói.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Code is disposable.</strong> 
-                        If it doesn't work, reroll. Don't get attached.
+                        <strong class="text-primary-600 dark:text-primary-400">O código é descartável.</strong> 
+                        Se não funcionar, regenere. Não se apegue.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Favor reinvention over patchwork.</strong> 
-                        When a solution no longer meets our needs, we embrace regeneration to achieve greater clarity and efficiency.
+                        <strong class="text-primary-600 dark:text-primary-400">Prefira a reinvenção ao remendo.</strong> 
+                        Quando uma solução não atende mais às nossas necessidades, abraçamos a regeneração para alcançar maior clareza e eficiência.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Optimize for acceleration.</strong> 
-                        The future belongs to those who build with exponential speed in mind.
+                        <strong class="text-primary-600 dark:text-primary-400">Otimize para aceleração.</strong> 
+                        O futuro pertence àqueles que constroem com velocidade exponencial em mente.
                     </li>
                     <li>
-                        <strong class="text-primary-600 dark:text-primary-400">Evolve constantly.</strong> 
-                        Teams should reflect, adapt, and upgrade their tools and workflows regularly.
+                        <strong class="text-primary-600 dark:text-primary-400">Evolua constantemente.</strong> 
+                        As equipes devem refletir, adaptar e atualizar suas ferramentas e fluxos de trabalho regularmente.
                     </li>
-                </ol>                          
+                </ol>                    
             </div>
         </main>
         
         <footer class="py-8 px-6 border-t border-purple-100 dark:border-purple-900/30">
             <div class="container mx-auto max-w-3xl flex flex-col md:flex-row justify-between items-center">
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 md:mb-0">
-                    &copy; 2025 The Vibe Coding Manifesto Authors<br>
-                    <span class="text-xs">This declaration may be freely copied in any form, but only in its entirety with this notice.</span>
+                    &copy; 2025 Os Autores do Manifesto Vibe Coding<br>
+                    <span class="text-xs">Esta declaração pode ser copiada livremente em qualquer forma, mas apenas em sua totalidade com este aviso.</span>
                 </p>
                 <a href="https://github.com/przadka/vibemanifesto-lp/" 
                    class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 flex items-center">
                     <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
                     </svg>
-                    GitHub Repository
+                    Repositório GitHub
                 </a>
             </div>
         </footer>
